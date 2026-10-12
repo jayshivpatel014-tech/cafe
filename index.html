@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name | IT Professional Portfolio</title>
+<meta name="description" content="Portfolio of Your Name, an aspiring IT professional and web developer. Skills, projects, education and contact.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%236d5dfc'/><text x='50' y='68' font-size='54' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'>YN</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#home" class="logo">YN<span>.dev</span></a>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu" class="menu" aria-label="Main">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="hi">Welcome to my portfolio</p>
+      <h1>Hi, I'm <span class="grad">Your Name</span></h1>
+      <p class="role">Aspiring IT Professional | <span id="typed"></span><span class="caret">|</span></p>
+      <p class="lead">I enjoy building clean, useful web applications and solving technical problems step by step. I'm looking for an opportunity to learn, contribute and grow in IT.</p>
+      <div class="btns">
+        <a href="#projects" class="btn primary">View My Projects</a>
+        <a href="#contact" class="btn ghost">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-img float">
+      <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=75" alt="Code on a monitor in a dark workspace" width="900" height="600" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="sec reveal">
+  <div class="wrap about">
+    <div class="avatar glass">
+      <!-- Replace with your photo: <img src="profile.jpg" alt="Portrait of Your Name" loading="lazy"> -->
+      <svg viewBox="0 0 200 200" role="img" aria-label="Profile photo placeholder"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6d5dfc"/><stop offset="1" stop-color="#3b82f6"/></linearGradient></defs><rect width="200" height="200" fill="url(#g)" opacity=".25"/><circle cx="100" cy="78" r="36" fill="url(#g)"/><path d="M30 190c4-44 36-64 70-64s66 20 70 64z" fill="url(#g)"/></svg>
+    </div>
+    <div>
+      <h2>About me</h2>
+      <p>I'm an IT student and self-motivated learner interested in web development, databases and software tools. [Edit: add your own background here.]</p>
+      <p>I like breaking problems into small parts, researching solutions and testing them until they work. My goal is to start a career as a developer or IT support engineer, working with a team that values learning.</p>
+      <p>Technical interests: front-end development, backend basics, data and automation. [Edit to match your interests.]</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="sec reveal">
+  <div class="wrap">
+    <h2>Technical skills</h2>
+    <p class="sub">Edit the <code>data-level</code> value (0–100) on each card to change its bar.</p>
+    <div class="grid skills">
+      <article class="glass card skill"><h3>HTML</h3><div class="bar"><i data-level="85"></i></div><span>85%</span></article>
+      <article class="glass card skill"><h3>CSS</h3><div class="bar"><i data-level="80"></i></div><span>80%</span></article>
+      <article class="glass card skill"><h3>JavaScript</h3><div class="bar"><i data-level="70"></i></div><span>70%</span></article>
+      <article class="glass card skill"><h3>React</h3><div class="bar"><i data-level="60"></i></div><span>60%</span></article>
+      <article class="glass card skill"><h3>Python</h3><div class="bar"><i data-level="65"></i></div><span>65%</span></article>
+      <article class="glass card skill"><h3>SQL</h3><div class="bar"><i data-level="65"></i></div><span>65%</span></article>
+      <article class="glass card skill"><h3>Git</h3><div class="bar"><i data-level="70"></i></div><span>70%</span></article>
+      <article class="glass card skill"><h3>GitHub</h3><div class="bar"><i data-level="70"></i></div><span>70%</span></article>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="sec reveal">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p class="sub">Placeholder projects. Replace titles, text, images and links with your own work.</p>
+    <div class="grid projects">
+      <article class="glass card project">
+        <img loading="lazy" width="600" height="400" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=70" alt="Code editor with source code">
+        <div class="body"><h3>Task Manager App</h3><p>A to-do app with categories, due dates and saved tasks.</p>
+        <ul class="tags"><li>React</li><li>CSS</li><li>LocalStorage</li></ul>
+        <div class="row"><a class="btn small primary" href="#" target="_blank" rel="noopener">Live Demo</a><a class="btn small ghost" href="#" target="_blank" rel="noopener">GitHub</a></div></div>
+      </article>
+      <article class="glass card project">
+        <img loading="lazy" width="600" height="400" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=70" alt="Laptop showing analytics charts">
+        <div class="body"><h3>Sales Data Dashboard</h3><p>Reads sales data from a database and shows summary charts.</p>
+        <ul class="tags"><li>Python</li><li>SQL</li><li>Charts</li></ul>
+        <div class="row"><a class="btn small primary" href="#" target="_blank" rel="noopener">Live Demo</a><a class="btn small ghost" href="#" target="_blank" rel="noopener">GitHub</a></div></div>
+      </article>
+      <article class="glass card project">
+        <img loading="lazy" width="600" height="400" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=70" alt="Laptop with code on screen">
+        <div class="body"><h3>Personal Blog Site</h3><p>A responsive blog layout with a simple, accessible design.</p>
+        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        <div class="row"><a class="btn small primary" href="#" target="_blank" rel="noopener">Live Demo</a><a class="btn small ghost" href="#" target="_blank" rel="noopener">GitHub</a></div></div>
+      </article>
+      <article class="glass card project">
+        <img loading="lazy" width="600" height="400" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=70" alt="Server hardware in a data center">
+        <div class="body"><h3>Home Lab Network Setup</h3><p>Documented a small lab with a virtual machine and basic network config.</p>
+        <ul class="tags"><li>Linux</li><li>Networking</li><li>Docs</li></ul>
+        <div class="row"><a class="btn small primary" href="#" target="_blank" rel="noopener">Live Demo</a><a class="btn small ghost" href="#" target="_blank" rel="noopener">GitHub</a></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="sec reveal">
+  <div class="wrap">
+    <h2>Education</h2>
+    <ol class="timeline">
+      <li class="glass card"><h3>[Your Degree, e.g. B.Sc. in Information Technology]</h3><p>[Your College / University]</p><p class="muted">[Start year] – [Graduation year]</p></li>
+      <li class="glass card"><h3>Certifications</h3><p>[Certification name, issuer, year]</p><p>[Certification name, issuer, year]</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="sec reveal">
+  <div class="wrap contact">
+    <div>
+      <h2>Contact</h2>
+      <p>Have an opportunity or a question? Send a message and I'll reply as soon as I can.</p>
+      <ul class="links">
+        <li><a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="mailto:you@example.com">Email me</a></li>
+      </ul>
+    </div>
+    <!-- Works on Netlify as-is. For other hosts, set action to a Formspree URL (see README). -->
+    <form class="glass card form" id="form" name="contact" method="POST" data-netlify="true" action="mailto:you@example.com" enctype="text/plain">
+      <input type="hidden" name="form-name" value="contact">
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      <label>Message<textarea name="message" rows="5" required></textarea></label>
+      <button class="btn primary" type="submit">Send message</button>
+      <p class="status" id="status" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    <p class="flinks"><a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a><a href="mailto:you@example.com">Email</a></p>
+    <a href="#home" class="btn small ghost">Back to top</a>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

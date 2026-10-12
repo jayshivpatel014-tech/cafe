@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Products — Butter & Bloom Cake Studio</title>
+<meta name="description" content="Browse celebration cakes, cupcakes, pastries and custom orders from Butter & Bloom Cake Studio.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg py-3">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-mark"><i class="bi bi-flower2"></i></span>
+        <span>Butter &amp; Bloom<small>Cake Studio</small></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-plum btn-sm-pill" href="contact.html">Order Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ===================== PAGE HEADER ===================== -->
+<section class="page-header">
+  <div class="container text-center">
+    <p class="eyebrow justify-content-center" style="color:var(--butter);">
+      <span style="background:var(--butter);"></span>The full menu
+    </p>
+    <h1 class="mt-3">Our Products</h1>
+    <nav class="breadcrumb-bloom mt-2">
+      <a href="index.html">Home</a> <span>/</span> Products
+    </nav>
+  </div>
+</section>
+
+<!-- ===================== FILTER + GRID ===================== -->
+<section class="section bg-ivory">
+  <div class="container">
+
+    <div class="d-flex flex-wrap justify-content-center gap-2 mb-3 reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="cakes">Cakes</button>
+      <button class="filter-btn" data-filter="cupcakes">Cupcakes</button>
+      <button class="filter-btn" data-filter="pastries">Pastries</button>
+      <button class="filter-btn" data-filter="custom">Custom Orders</button>
+    </div>
+    <p class="text-center text-cocoa-soft small mb-5">Showing <span id="resultsCount">12</span> items</p>
+
+    <div class="row g-4">
+
+      <!-- CAKES -->
+      <div class="col-sm-6 col-lg-4 product-item" data-category="cakes">
+        <div class="product-card">
+          <div class="product-media">
+            <span class="product-tag">Bestseller</span>
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Rich chocolate layer cake with ganache drip" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-cat-label mb-1">Celebration Cake</p>
+            <h5 class="mb-0 fs-6">Midnight Chocolate Drip</h5>
+            <p class="product-price mt-2 mb-0">$48.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 product-item" data-category="cakes">
+        <div class="product-card">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=700&q=80" alt="Pink layered celebration cake with fresh flowers" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-cat-label mb-1">Celebration Cake</p>
+            <h5 class="mb-0 fs-6">Rose Petal Bloom</h5>
+            <p class="product-price mt-2 mb-0">$52.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 product-item" data-category="cakes">
+        <div class="product-card">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1546039907-7fa05f864c02?auto=format&fit=crop&w=700&q=80" alt="Layer cake with berries on top" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-cat-label mb-1">Celebration Cake</p>
+            <h5 class="mb-0 fs-6">Berry Vanilla Stack</h5>
+            <p class="product-price mt-2 mb-0">$45.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 product-item" data-category="cakes">
+        <div class="product-card">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=80" alt="Decorated round cake with fruit garnish" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-cat-label mb-1">Celebration Cake</p>
+            <h5 class="mb-0 fs-6">Citrus Cream Round</h5>
+            <p class="product-price mt-2 mb-0">$42.00</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CUPCAKES -->
+      <div class="col-sm-6 col-lg-4 product-item" data-category="cupcakes">
+        <div class="product-card">
+          <div class="product-media">
+            <span class="product-tag">New</span>
+            <img src="https://images.unsplash.com/photo-1607478900766-efe13248b125?auto=format&fit=crop&w=700&q=80" alt="Assorted pastel frosted cupcakes" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-cat-label mb-1">Cupcake Box</p>
+            <h5 class="mb-0 fs-6">Garden Bloom Dozen</h5>
+            <p class="product-price mt-2 mb-0">$26.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 product-item" data-category="cupcakes">
+        <div class="product-card">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=700&q=80" alt="Chocolate cupcakes with swirled frosting" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-cat-label mb-1">Cupcake Box</p>
+            <h5 class="mb-0 fs-6">Cocoa Swirl Six-Pack</h5>
+            <p class="product-price mt-2 mb-0">$15.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 product-item" data-category="cupcakes">
+        <div class="product-card">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=700&q=80" alt="Vanilla cupcakes with sprinkles" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-cat-label mb-1">Cupcake Box</p>
+            <h5 class="mb-0 fs-6">Classic Vanilla Dozen</h5>
+            <p class="product-price mt-2 mb-0">$24.00</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PASTRIES -->
+      <div class="col-sm-6 col-lg-4 product-item" data-category="pastries">
+        <div class="product-card">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1541599468348-e96984315921?auto=format&fit=crop&w=700&q=80" alt="Fresh fruit tart pastry" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-cat-label mb-1">Pastry</p>
+            <h5 class="mb-0 fs-6">Seasonal Fruit Tart</h5>
+            <p class="product-price mt-2 mb-0">$8.50</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 product-item" data-category="pastries">
+        <div class="product-card">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80" alt="Butter croissants on a tray" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-cat-label mb-1">Pastry</p>
+            <h5 class="mb-0 fs-6">Butter Croissant</h5>
+            <p class="product-price mt-2 mb-0">$4.50</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 product-item" data-category="pastries">
+        <div class="product-card">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=700&q=80" alt="Danish pastry with glaze" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-cat-label mb-1">Pastry</p>
+            <h5 class="mb-0 fs-6">Apricot Danish</h5>
+            <p class="product-price mt-2 mb-0">$5.00</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CUSTOM -->
+      <div class="col-sm-6 col-lg-4 product-item" data-category="custom">
+        <div class="product-card">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1587248720327-ce919c56db1a?auto=format&fit=crop&w=700&q=80" alt="Elegant white wedding cake with sugar flowers" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-cat-label mb-1">Custom Order</p>
+            <h5 class="mb-0 fs-6">Ivory Peony Wedding Tier</h5>
+            <p class="product-price mt-2 mb-0">From $220.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 product-item" data-category="custom">
+        <div class="product-card">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=700&q=80" alt="Custom themed cake display" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-cat-label mb-1">Custom Order</p>
+            <h5 class="mb-0 fs-6">Design-Your-Own Cake</h5>
+            <p class="product-price mt-2 mb-0">From $60.00</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /row -->
+
+  </div>
+</section>
+
+<!-- ===================== CTA BANNER ===================== -->
+<section class="section pt-0">
+  <div class="container">
+    <div class="cta-banner text-center reveal">
+      <h2 class="mb-3">Don't see what you're picturing?</h2>
+      <p class="mb-4" style="max-width:520px;margin:0 auto;opacity:.85;">Every custom cake starts as a conversation. Send us a photo, a color, or just a vibe.</p>
+      <a href="contact.html" class="btn btn-butter">Request a Custom Cake</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <p class="footer-brand mb-3">Butter &amp; Bloom</p>
+        <p class="small" style="max-width:320px;">Small-batch cakes, cupcakes and pastries baked fresh daily in Ahmedabad. Every order mixed and frosted by hand.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="social-circle" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-circle" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-circle" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Explore</h5>
+        <ul class="list-unstyled small d-flex flex-column gap-2 mt-3">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h5>Visit</h5>
+        <ul class="list-unstyled small d-flex flex-column gap-2 mt-3">
+          <li><i class="bi bi-geo-alt me-2"></i>14 Bakers Lane, Ahmedabad</li>
+          <li><i class="bi bi-telephone me-2"></i>+91 98765 43210</li>
+          <li><i class="bi bi-envelope me-2"></i>hello@butterbloom.co</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h5>Stay Sweet</h5>
+        <p class="small mt-3">Get new flavors and offers in your inbox.</p>
+        <form class="newsletter-form d-flex">
+          <input type="email" class="form-control" placeholder="Your email address" required>
+          <button class="btn btn-butter" type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-center text-md-start gap-2">
+      <p class="mb-0">&copy; <span class="current-year"></span> Butter &amp; Bloom Cake Studio. All rights reserved.</p>
+      <p class="mb-0">Made with <i class="bi bi-heart-fill text-rose"></i> for cake lovers.</p>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
